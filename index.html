@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Manuendy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Salão de Manuendy</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Salão</h2>
+            <p>Nosso salão oferece os melhores serviços de beleza com profissionais qualificados para atender suas necessidades. Venha nos visitar e sair renovado!</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Corte de cabelo</li>
+                <li>Coloração e tintura</li>
+                <li>Manicure e pedicure</li>
+                <li>Depilação</li>
+                <li>Maquiagem</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="fotos-galeria">
+                <img src="imagem1.jpg" alt="Corte de cabelo">
+                <img src="imagem2.jpg" alt="Maquiagem">
+                <img src="imagem3.jpg" alt="Manicure">
+            </div>
+        </section>
+
+        <section id="agendamento">
+            <h2>Agende Seu Horário</h2>
+            <form action="agendamento.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico">
+                    <option value="corte">Corte de cabelo</option>
+                    <option value="maquiagem">Maquiagem</option>
+                    <option value="manicure">Manicure</option>
+                </select>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Telefone: (47) 1234-5678</p>
+            <p>Email: contato@salondeManuendy.com</p>
+            <p>Endereço: Rua Exemplo, 123 - Blumenau, SC</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Salão de Manuendy. Todos os direitos reservados.</p>
+        <p>Nos siga nas redes sociais: [Links para Instagram, Facebook]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<section id="sobre">
+    <h2>Sobre o Salão</h2>
+    <p>No <strong>Salão de Manuendy</strong>, nossa missão é fazer com que você se sinta especial em cada visita. Criamos um ambiente acolhedor, pensado para oferecer conforto e bem-estar, enquanto cuidamos da sua beleza.</p>
+    <p>Nossos profissionais altamente qualificados estão sempre atentos às últimas tendências para proporcionar resultados que combinem com seu estilo e realcem sua autoestima. Trabalhamos com produtos de marcas renomadas e de alta qualidade, garantindo a saúde e a beleza dos seus cabelos, unhas e pele.</p>
+    <p>Além disso, oferecemos um espaço onde você pode relaxar, desfrutar de uma conversa leve e sair renovada para encarar o dia com confiança e charme.</p>
+</section>
+<section id="diferenciais">
+    <h2>Por Que Escolher o Salão de Manuendy?</h2>
+    <div class="blocos">
+        <div class="bloco">
+            <img src="icone-ambiente.png" alt="Ambiente Aconchegante">
+            <h3>Ambiente Aconchegante</h3>
+            <p>Espaço relaxante, com música, café e um atendimento que faz você se sentir especial.</p>
+        </div>
+        <div class="bloco">
+            <img src="icone-estilo.png" alt="Tendências de Estilo">
+            <h3>Tendências de Estilo</h3>
+            <p>Profissionais especializados nas últimas tendências para criar o look perfeito para você.</p>
+        </div>
+        <div class="bloco">
+            <img src="icone-produtos.png" alt="Produtos Premium">
+            <h3>Produtos Premium</h3>
+            <p>Usamos apenas marcas de qualidade reconhecida para garantir resultados impecáveis.</p>
+        </div>
+    </div>
+</section>
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+<section id="diferenciais">
+    <h2>Por Que Escolher o Salão de Manuendy?</h2>
+    <div class="blocos">
+        <!-- Bloco 1 -->
+        <div class="bloco">
+            <img src="ambiente-acolhedor.jpg" alt="Ambiente Aconchegante" />
+            <h3>Ambiente Aconchegante</h3>
+            <p>Espaço relaxante, com música, café e um atendimento que faz você se sentir especial.</p>
+        </div>
+        <!-- Bloco 2 -->
+        <div class="bloco">
+            <img src="tendencias-estilo.jpg" alt="Tendências de Estilo" />
+            <h3>Tendências de Estilo</h3>
+            <p>Profissionais especializados nas últimas tendências para criar o look perfeito para você.</p>
+        </div>
+        <!-- Bloco 3 -->
+        <div class="bloco">
+            <img src="produtos-premium.jpg" alt="Produtos Premium" />
+            <h3>Produtos Premium</h3>
+            <p>Usamos apenas marcas de qualidade reconhecida para garantir resultados impecáveis.</p>
+        </div>
+    </div>
+</section>
+<img src="imagens/ambiente-acolhedor.jpg" alt="Corte de cabelo " />
+<section id="diferenciais">
+    <h2>Por Que Escolher o Salão de Manuendy?</h2>
+    <div class="blocos">
+        <div class="bloco">
+            <img src="imagens/istockphoto-1678703867-612x612.webp" alt="Ambiente Aconchegante">
+            <h3>Ambiente Aconchegante</h3>
+            <p>Espaço relaxante, com música, café e um atendimento que faz você se sentir especial.</p>
+        </div>
+    </div>
+</section>
